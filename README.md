@@ -1,6 +1,8 @@
 NfqAdminBundle
 =============================
 
+[![Build Status](https://travis-ci.org/avangardas/admin-bundle.svg?branch=master)](https://travis-ci.org/avangardas/admin-bundle)
+
 ## Installation
 
 ### Step 1: Download NfqAdminBundle using composer
