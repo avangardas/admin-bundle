@@ -1,6 +1,7 @@
-sudo: false
 language: php
 php:
+  - 5.3
+  - 5.4
   - 5.5
   - 5.6
   - 7.0
@@ -16,5 +17,5 @@ before_script:
   - composer config -g github-oauth.github.com $GITHUB_COMPOSER_AUTH
   - composer install --no-interaction --prefer-dist
 script:
-  - vendor/bin/phpunit --coverage-clover=coveralls.clover
+  - vendor/bin/phpunit
   - vendor/bin/phpcs -p --standard=PSR2 --ignore=vendor/,Tests/app/ ./
