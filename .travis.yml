@@ -7,9 +7,6 @@ php:
 env:
   global:
       - SYMFONY="~2.6"
-matrix:
-  include:
-    - env: SYMFONY="2.6.*"
 install:
   - composer require --no-update symfony/symfony:${SYMFONY}
 before_script:
